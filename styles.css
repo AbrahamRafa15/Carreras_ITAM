@@ -1,0 +1,34 @@
+.nav-verde {
+    background: linear-gradient(
+        to bottom,
+        rgba(30, 54, 51, 1) 0%,      /* Verde oscuro, opacidad 100% arriba */
+        rgba(30, 54, 51, 0.4) 100%   /* Verde oscuro, opacidad 80% abajo */
+    );
+    /*backdrop-filter: blur(8px);*/
+}
+
+.nav-verde .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.nav-verde .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.nuestras-carreras {
+    text-decoration: underline;
+}
+
+.logo-itam {
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+    /*padding-right: 3rem;*/
+}
+
+.banner-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
