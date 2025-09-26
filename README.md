@@ -42,3 +42,18 @@ git push
 ```
 
 ### Pull-requests y videos
+
+Configuración inicial:
+[Primer Pull Request](https://github.com/AbrahamRafa15/Carreras_ITAM/pull/1)
+Finalización de la funcionalidad de la página
+[Segundo Pull Request](https://github.com/AbrahamRafa15/Carreras_ITAM/pull/2)
+Link para GitHub Pages
+[GitHub Pages](https://abrahamrafa15.github.io/Carreras_ITAM/)
+Link para el video de las evidencias
+[Video en YouTube](https://youtu.be/ylLKt65YvLU)
+```bash
+git add README.md
+git commit -m "Actualizar README.md con los links de los PR, Pages y YouTube"
+git push
+````
+
