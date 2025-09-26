@@ -4,53 +4,532 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carreras ITAM - Licenciatura e Ingeniería</title>
+    <link rel="icon" href="Imagenes/logo_itam.jpg" type="image/jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg nav-verde fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://www.itam.mx/">
-        <img src="Imagenes/logo-ITAM-blanco.png" alt="Logo del ITAM" class="logo-itam">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://carreras.itam.mx/">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nuestras-carreras" href="#">Nuestras carreras</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Admisiones
-            </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://carreras.itam.mx/admisiones/">Admisiones</a></li>
-                <li><a class="dropdown-item" href="https://carreras.itam.mx/becas-y-ayuda-financiera/">Becas y ayuda financiera</a></li>
-              </ul>
+    <nav class="navbar navbar-expand-xl nav-verde fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.itam.mx/">
+          <img src="Imagenes/logo-ITAM-blanco.png" alt="Logo del ITAM" class="logo-itam">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://carreras.itam.mx/">Inicio</a>
             </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://carreras.itam.mx/vida-universitaria/">Vida universitaria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://carreras.itam.mx/intercambio-academico/">Intercambio académico</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://carreras.itam.mx/estudiantes-foraneos/">Estudiantes foráneos</a>
-          </li>
-          </ul>
+            <li class="nav-item">
+              <a class="nav-link nuestras-carreras" href="#" aria-current="page">Nuestras carreras</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Admisiones
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://carreras.itam.mx/admisiones/">Admisiones</a></li>
+                  <li><a class="dropdown-item" href="https://carreras.itam.mx/becas-y-ayuda-financiera/">Becas y ayuda financiera</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://carreras.itam.mx/vida-universitaria/">Vida universitaria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://carreras.itam.mx/intercambio-academico/">Intercambio académico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://carreras.itam.mx/estudiantes-foraneos/">Estudiantes foráneos</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="banner-container position-relative">
+      <img src="Imagenes/banner-nuestras-carreras.webp" alt="banner-nuestras-carreras" class="banner-img">
+      <div class="position-absolute top-0 start-0 w-100 h-100 d-grid align-items-end pb-5" style="z-index:2;">
+        <div class="container">
+          <div class="row flex-column flex-md-row">
+            <div class="col text-center text-md-start mb-2">
+              <h1 class="text-white text-decoration-none">Carreras ITAM</h1>
+            </div>
+            <div class="col text-center text-md-end">
+              <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-2">
+                <img src="Imagenes/phone.fill.svg" alt="teléfono" class="iconos">
+                <h4 class="mb-0"><a href="tel:5556284028" class="text-white text-decoration-none">55 5628 4028</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center text-md-end">
+              <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-2 mt-3">
+                <img src="Imagenes/envelope.svg" alt="correo" class="iconos">
+                <h4 class="mb-2"><a href="mailto:informes@itam.mx" class="text-white text-decoration-none">informes@itam.mx</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-2">
+              <a href="https://www.facebook.com/AspirantesITAM/" target="_blank" rel="noopener">
+                <img src="Imagenes/facebook.svg" alt="logo de facebook" class="iconos-redes">
+              </a>
+              <a href="https://x.com/AspirantesITAM" target="_blank" rel="noopener">
+                <img src="Imagenes/X_icon.svg" alt="logo de x" class="iconos-redes">
+              </a>
+              <a href="https://www.youtube.com/user/itam" target="_blank" rel="noopener">
+                <img src="Imagenes/youtube.svg" alt="logo de youtube" class="iconos-redes">
+              </a>
+              <a href="https://api.whatsapp.com/send/?phone=5215554143597&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">
+                <img src="Imagenes/whatsapp.svg" alt="logo de whatsapp" class="iconos-redes">
+              </a>
+              <a href="https://www.instagram.com/aspirantes_itam/" target="_blank" rel="noopener">
+                <img src="Imagenes/instagram.svg" alt="logo de instagram" class="iconos-redes">
+              </a>
+              <a href="https://www.tiktok.com/@itam_mx?_t=8pdkjJnRMlp&_r=1" target="_blank" rel="noopener">
+                <img src="Imagenes/tiktok.svg" alt="logo de tiktok" class="iconos-redes">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-  </nav>
-  <div>
-    <img src="Imagenes/banner-nuestras-carreras.webp" alt="banner-nuestras-carreras" class="banner-img">
-  </div>
-    
-    
+    </div>  
+    <section class="planes-estudio py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-actuaria.webp" class="img-fluid" alt="imagen de estudiante de carrera de actuaria">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-actuaria/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Actuaría</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-actuaria/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-admin.webp" class="img-fluid" alt="imagen de estudiante de carrera de administración de negocios">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-administracion/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Administración de Negocios</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-administracion" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-datos.webp" class="img-fluid" alt="imagen de estudiante de carrera de ciencia de datos">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ciencia de Datos</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-ciencia-de-datos/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-cpol.webp" class="img-fluid" alt="imagen de estudiante de carrera de ciencia política">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-ciencia-politica/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ciencia Política</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-ciencia-politica/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+              <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-conta.webp" class="img-fluid" alt="imagen de estudiante de carrera de contaduría analítica y finanzas corporativas">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-contaduria/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Contaduría Analítica y Finanzas Corporativas</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-contaduria/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-derecho.webp" class="img-fluid" alt="imagen de estudiante de carrera de derecho">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-derecho/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Derecho</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-derecho/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-finanzas.webp" class="img-fluid" alt="imagen de estudiante de carrera de dirección financiera">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-direccion-financiera/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Dirección Financiera</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-direccion-financiera/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-merca.webp" class="img-fluid" alt="imagen de estudiante de carrera de dirección de mercadotecnia">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-mercadotecnia/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Dirección de Mercadotecnia</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-mercadotecnia/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-eco.webp" class="img-fluid" alt="imagen de estudiante de carrera de economía">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-economomia/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Economía</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-economomia/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-3 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-mate.webp" class="img-fluid" alt="imagen de estudiante de carrera de matemáticas aplicadas">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-matematicas/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Matemáticas Aplicadas</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-matematicas/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-rrii.webp" class="img-fluid" alt="imagen de estudiante de carrera de relaciones internacionales">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/licenciatura-relaciones-internacionales/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Relaciones Internacionales</h5>
+                </a>
+                <a href="https://carreras.itam.mx/licenciatura-relaciones-internacionales/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-ia.webp" class="img-fluid" alt="imagen de estudiante de carrera de Ingeniería en Inteligencia Artificial">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/ingenieria-inteligencia-artificial/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ingeniería en Inteligencia Artificial</h5>
+                </a>
+                <a href="https://carreras.itam.mx/ingenieria-inteligencia-artificial/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-compu.webp" class="img-fluid" alt="imagen de estudiante de carrera de Ingeniería y ciencias de la Computación">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/ingenieria-ciencias-computacion/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ingeniería y Ciencias de la Computación</h5>
+                </a>
+                <a href="https://carreras.itam.mx/ingenieria-ciencias-computacion/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-industrial.webp" class="img-fluid" alt="imagen de estudiante de carrera de ingeniería industrial y en sistemas inteligentes">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/ingenieria-industrial/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ingeniería Industrial y en Sistemas Inteligentes</h5>
+                </a>
+                <a href="https://carreras.itam.mx/ingenieria-industrial/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-mecatronica.webp" class="img-fluid" alt="imagen de estudiante de carrera de ingeniería en mecatrónica y robótica inteligente">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/ingenieria-mecatronica/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ingeniería en Mecatrónica y Robótica Inteligente</h5>
+                </a>
+                <a href="https://carreras.itam.mx/ingenieria-mecatronica/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="card text-center tarjeta">
+              <div class="px-4 pt-4">
+                <img src="https://carreras.itam.mx/wp-content/uploads/2025/07/mini-2025-negocios.webp" class="img-fluid" alt="imagen de estudiante de carrera de ingeniería en negocios">
+              </div>
+              <div class="card-body">
+                <a href="https://carreras.itam.mx/ingenieria-negocios/" class="text-decoration-none" target="_blank">
+                  <h5 class="card-title titulo-tarjeta">Ingeniería en Negocios</h5>
+                </a>
+                <a href="https://carreras.itam.mx/ingenieria-negocios/" target="_blank"
+                   class="planespdf text-decoration-none d-flex align-items-center justify-content-end gap-2">
+                  <img src="Imagenes/pdf.svg" alt="simbolo de pdf" class="iconos">
+                  <h5 class="mb-0 descripcion-tarjeta">PLAN DE ESTUDIOS</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section>
+      <div class="container mt-5 px-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-4 col-sm-12 px-5">
+            <h2 class="titulos-descripciones">Programas Conjuntos</h2>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 px-5">
+            <p class="descripciones">
+              En el <b>ITAM</b>, nuestros <b>programas conjuntos</b> te permiten estudiar dos carreras simultáneamente, 
+              con ello, optimizas tu tiempo y amplías tus habilidades. Esta opción está diseñada para ofrecerte 
+              una formación integral en dos disciplinas distintas, lo que te permite adquirir una amplia gama de 
+              conocimientos y prepararte para diversas oportunidades profesionales.
+            </p>
+          </div>
+        </div>
+        <div class="contenedor-video mt-5 col-12">
+          <img src="https://carreras.itam.mx/wp-content/uploads/2024/08/programas-conjuntos.webp" 
+               alt="Programas conjuntos"
+               class="img-fluid rounded-3"
+               id="programasImg">
+          <button id="playBtn" class="boton-play">
+            <img src="Imagenes/play.circle.svg" alt="Botón de reproducir">
+          </button>
+          <div id="videoEmbebido" class="envoltorio-video d-none">
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/4vxHE4T63RQ" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="row g-5 mt-3">
+          <div class="col-lg-4 col-md-4 col-sm-12 px-5">
+            <h2 class="titulos-descripciones">Dobles grados</h2>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12 px-5">
+            <p class="descripciones">
+              En el <b>ITAM</b>, nuestros programas de <b>dobles grados</b> te permiten combinar tu licenciatura 
+              con un posgrado en un esquema dinámico y de nivel internacional. Este modelo está diseñado 
+              para ofrecerte una formación académica avanzada en menos tiempo, preparándote para destacar en 
+              el ámbito profesional y académico.
+            </p>
+          </div>
+        </div>
+        <div class="contenedor-video mt-5 col-12">
+          <img src="https://carreras.itam.mx/wp-content/uploads/2024/08/dobles-grados.webp" 
+               alt="Programas conjuntos"
+               class="img-fluid rounded-3"
+               id="programasImg2">
+          <button id="playBtn2" class="boton-play">
+            <img src="Imagenes/play.circle.svg" alt="Botón de reproducir">
+          </button>
+          <div id="videoEmbebido2" class="envoltorio-video d-none">
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/2ja2c3cMWBk" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="pie-de-pagina mt-5">
+      <div class="container mt-5">
+        <div class="row mt-3 py-5">
+          <div class="col-xl-5 col-lg-3 col-md-3 col-sm-12">
+            <img src="Imagenes/logo-ITAM-blanco.png" alt="Logo del ITAM" class="logo-itam">
+            <p class="mt-3">
+              En el ITAM nos proponemos contribuir a la formación integral de la 
+              persona y al desarrollo de una sociedad más libre, más justa y más 
+              próspera.
+            </p>
+            <div class="row mt-5 g-1 justify-content-start justify-content-lg-center">
+              <div class="col-2 col-sm-2 col-md-3 col-lg-2 text-center">
+                <a href="https://www.facebook.com/AspirantesITAM/" target="_blank" rel="noopener">
+                  <img src="Imagenes/facebook.svg" alt="logo de facebook" class="iconos-redes2">
+                </a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-3 col-lg-2 text-center">
+                <a href="https://x.com/AspirantesITAM" target="_blank" rel="noopener">
+                  <img src="Imagenes/X_icon.svg" alt="logo de x" class="iconos-redes2">
+                </a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-3 col-lg-2 text-center">
+                <a href="https://www.youtube.com/user/itam" target="_blank" rel="noopener">
+                  <img src="Imagenes/youtube.svg" alt="logo de youtube" class="iconos-redes2">
+                </a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-3 col-lg-2 text-center">
+                <a href="https://api.whatsapp.com/send/?phone=5215554143597&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">
+                  <img src="Imagenes/whatsapp.svg" alt="logo de whatsapp" class="iconos-redes2">
+                </a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-3 col-lg-2 text-center">
+                <a href="https://www.instagram.com/aspirantes_itam/" target="_blank" rel="noopener">
+                  <img src="Imagenes/instagram.svg" alt="logo de instagram" class="iconos-redes2">
+                </a>
+              </div>
+              <div class="col-2 col-sm-2 col-md-3 col-lg-2 text-center">
+                <a href="https://www.tiktok.com/@itam_mx?_t=8pdkjJnRMlp&_r=1" target="_blank" rel="noopener">
+                  <img src="Imagenes/tiktok.svg" alt="logo de tiktok" class="iconos-redes2">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12">
+            <h6 class="titulo-pie">MENÚ</h6>
+            <ul class="list-group list-group-flush">
+              <a href="https://carreras.itam.mx/" class="list-group-item list-group-item-action">Inicio</a>
+              <a href="https://carreras.itam.mx/carreras/" class="list-group-item list-group-item-action">Nuestras carreras</a>
+              <a href="https://carreras.itam.mx/admisiones/" class="list-group-item list-group-item-action">Admisión</a>
+              <a href="https://carreras.itam.mx/becas-y-ayuda-financiera/" class="list-group-item list-group-item-action">Becas y ayuda financiera</a>
+              <a href="https://carreras.itam.mx/vida-universitaria/" class="list-group-item list-group-item-action">Vida universitaria</a>
+              <a href="https://carreras.itam.mx/intercambio-academico/" class="list-group-item list-group-item-action">Intercambio académico</a>
+              <a href="https://carreras.itam.mx/estudiantes-foraneos/" class="list-group-item list-group-item-action">Estudiantes foráneos</a>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12">
+            <h6 class="titulo-pie">Dirección</h6>
+            <a href="https://maps.app.goo.gl/BJUxxQeCPr5osGej9" class="list-group-item list-group-item-action" target="_blank">
+              Río Hondo No. 1 Col. Progreso Tizapán CP. 01080 
+              Alc. Álvaro Obregón, Ciudad de México
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12">
+            <h6 class="titulo-pie">Contacto</h6>
+            <ul class="list-group list-group-flush">
+              <a href="mailto:informes@itam.mx" class="list-group-item list-group-item-action">informes@itam.mx</a>
+              <a href="tel:5556284028" class="list-group-item list-group-item-action">55 5628 4028</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container px-5 py-3">
+        <a href="https://avisodeprivacidad.itam.mx/asistencia_preuniversitaria/" class="aviso-privacidad">Aviso de privacidad</a>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('.contenedor-video').forEach(contenedor => {
+        const btn = contenedor.querySelector('.boton-play');
+        const img = contenedor.querySelector('img');
+        const video = contenedor.querySelector('.envoltorio-video');
+
+        btn.addEventListener('click', () => {
+          img.classList.add('d-none');
+          btn.classList.add('d-none');
+          video.classList.remove('d-none');
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

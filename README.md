@@ -16,3 +16,29 @@ Se creó un repositorio en GitHub llamado Carreras_ITAM. De manera local, se uti
  git checkout -b "usr/AbrahamMtz"
  ```
 
+## Flujo de trabajo
+
+Se comenzó a trabajar con la barra de navegación y la imagen principal de fondo de la página de carreras ITAM. Además, se añadió una hoja de estilos CSS que contenga estilado adicional al proporcionado por bootstrap.
+
+```bash
+git add .
+git commit -m "Primera versión de la página con index.html y styles.css, barra de navegación y banner."
+git push
+```
+
+### Comandos para subir todo
+Después de terminar la página, se insertaron los siguientes comandos para subir todo a GitHub
+
+```bash
+git add index.html
+git commit -m "Finalización del html de la página"
+git add styles.css
+git commit -m "Finalización del css de la página"
+git add Imagenes/*
+git commit -m "Subir todas las imágenes necesarias para que funcione"
+git add README.md
+git commit -m "Subir README.md actualizado"
+git push
+```
+
+### Pull-requests y videos
